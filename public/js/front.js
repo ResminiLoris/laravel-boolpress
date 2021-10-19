@@ -37620,7 +37620,7 @@ var render = function() {
       _c("div", { staticClass: "col-md-8" }, [
         _c(
           "div",
-          { staticClass: "card" },
+          { staticClass: "card m-5" },
           [
             _c("Header"),
             _vm._v(" "),
