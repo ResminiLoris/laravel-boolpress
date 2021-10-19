@@ -68,7 +68,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/admin') }}">Home</a>
+                        <a href="{{ url('/admin') }}">Pannello Admin</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
 
@@ -81,18 +81,15 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                  Resmini Loris
                 </div>
-
+                
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="{{route('admin.posts.index')}}">Posts</a>
+                    <a href="https://github.com/ResminiLoris">GitHub</a>
+                    <a href="https://www.linkedin.com/in/loris-resmini-66a063a6/">Linkedin</a>
+                    <a href="https://www.facebook.com/lorischris.resmini">Facebook</a>
+                    <a href="">CV</a>
                 </div>
             </div>
         </div>
