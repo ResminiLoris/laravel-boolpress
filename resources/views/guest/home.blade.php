@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel</title>
-
+        <link rel="stylesheet" href="{{asset('css/app.css')}}" type="text/css">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
@@ -64,6 +64,7 @@
         </style>
     </head>
     <body>
+        <div id="root"></div>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
@@ -78,20 +79,7 @@
                     @endauth
                 </div>
             @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                  Resmini Loris
-                </div>
-                
-                <div class="links">
-                    <a href="{{route('admin.posts.index')}}">Posts</a>
-                    <a href="https://github.com/ResminiLoris">GitHub</a>
-                    <a href="https://www.linkedin.com/in/loris-resmini-66a063a6/">Linkedin</a>
-                    <a href="https://www.facebook.com/lorischris.resmini">Facebook</a>
-                    <a href="">CV</a>
-                </div>
-            </div>
-        </div>
+        </div> 
+        <script src="{{asset('js/front.js')}}"></script>
     </body>
 </html>
