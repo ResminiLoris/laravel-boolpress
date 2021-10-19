@@ -13,7 +13,7 @@
         <tbody>
             @forelse ($posts as $post)
             <tr>
-                <td>{{$post->title}}</td>
+                <td><strong>{{$post->title}}</strong></td>
                 <td>{{$post->getFormattedDate('created_at')}}</td>
                 <td><a href="{{route('admin.posts.show', $post->id)}}" class="btn btn-primary">leggi di più</a></td>
             </tr>
