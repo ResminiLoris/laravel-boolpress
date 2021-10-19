@@ -11,16 +11,16 @@
           </tr>
         </thead>
         <tbody>
-        @forelse ($posts as $post)
-          <tr>
-            <td>{{$post->title}}</td>
-            <td>{{$post->created_at}}</td>
-            <td><a href="{{route('admin.posts.show', $post->id)}}" class="btn btn-primary"></a></td>
-          </tr>
+            @forelse ($posts as $post)
+            <tr>
+                <td>{{$post->title}}</td>
+                <td>{{$post->getFormattedDate('created_at')}}</td>
+                <td><a href="{{route('admin.posts.show', $post->id)}}" class="btn btn-primary">leggi di più</a></td>
+            </tr>
 
-          @empty
-          <tr><td colspan="3" class="text-center">non ci sono contenuti da visualizzare</td></tr>
-        @endforelse
+            @empty
+            <tr><td colspan="3" class="text-center">non ci sono contenuti da visualizzare</td></tr>
+            @endforelse
         </tbody>
       </table>
 </div>
