@@ -1,5 +1,5 @@
 <template>
-    <div class="card-header">Benvenuti nel mio sito</div>
+    <header><h1>Benvenuti sul mio sito</h1></header>
 </template>
 
 <script>
